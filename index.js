@@ -291,6 +291,7 @@ class Peer extends stream.Duplex {
       submap.set(stream, sender)
       this._senderMap.set(track, submap)
       this._needsNegotiation()
+      return sender
     } else if (sender.removed) {
       throw makeError('Track has been removed. You should enable/disable tracks that you want to re-add.', 'ERR_SENDER_REMOVED')
     } else {
@@ -958,7 +959,7 @@ class Peer extends stream.Duplex {
 
     event.streams.forEach(eventStream => {
       this._debug('on track')
-      this.emit('track', event.track, eventStream, event.transceiver.mid)
+      this.emit('track', event.track, eventStream, event.transceiver)
 
       this._remoteTracks.push({
         track: event.track,
