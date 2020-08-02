@@ -242,6 +242,7 @@ var peer2 = new Peer({ wrtc: wrtc })
 ## Who is using `simple-peer`?
 
 - [WebTorrent](http://webtorrent.io) - Streaming torrent client in the browser
+- [Virus Cafe](https://virus.cafe) - Make a friend in 2 minutes
 - [Instant.io](https://instant.io) - Secure, anonymous, streaming file transfer
 - [Zencastr](https://zencastr.com) - Easily record your remote podcast interviews in studio quality.
 - [Friends](https://github.com/moose-team/friends) - Peer-to-peer chat powered by the web
@@ -270,6 +271,11 @@ var peer2 = new Peer({ wrtc: wrtc })
 - [Cyph](https://www.cyph.com) - Cryptographically secure messaging and social networking service, providing an extreme level of privacy combined with best-in-class ease of use
 - [Ciphora](https://github.com/HR/ciphora) - A peer-to-peer end-to-end encrypted messaging chat app.
 - [Whisthub](https://www.whisthub.com) - Online card game Color Whist with the possibility to start a video chat while playing.
+- [Brie.fi/ng](https://brie.fi/ng) - Secure anonymous video chat
+- [Peer.School](https://github.com/holtwick/peer2school) - Simple virtual classroom starting from the 1st class including video chat and real time whiteboard
+- [FileFire](https://filefire.ca) - Transfer large files and folders at high speed without size limits.
+- [safeShare](https://github.com/vj-abishek/airdrop) - Transfer files easily with text and voice communication.
+- [CubeChat](https://cubechat.io) - Party in 3D 🎉
 - *Your app here! - send a PR!*
 
 ## api
@@ -350,7 +356,7 @@ Add a `MediaStreamTrack` to the connection. Must also pass the `MediaStream` you
 
 Remove a `MediaStreamTrack` from the connection. Must also pass the `MediaStream` that it was attached to.
 
-## `peer.replaceTrack(oldTrack, newTrack, stream)`
+### `peer.replaceTrack(oldTrack, newTrack, stream)`
 
 Replace a `MediaStreamTrack` with another track. Must also pass the `MediaStream` that the old track was attached to.
 
